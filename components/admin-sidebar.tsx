@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { TreePine, MapPin, Image, HelpCircle, QrCode, LogOut, Home, Menu, X } from "lucide-react"
+import { TreePine, MapPin, HelpCircle, QrCode, LogOut, Home, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useState } from "react"
@@ -10,7 +10,6 @@ import { useState } from "react"
 const sidebarLinks = [
   { href: "/admin/dashboard", label: "Overzicht", icon: Home },
   { href: "/admin/dashboard/locaties", label: "Locaties", icon: MapPin },
-  { href: "/admin/dashboard/afbeeldingen", label: "Afbeeldingen", icon: Image },
   { href: "/admin/dashboard/quiz", label: "Quizvragen", icon: HelpCircle },
   { href: "/admin/dashboard/qr-codes", label: "QR Codes", icon: QrCode },
 ]
